@@ -9,15 +9,14 @@
 
   bootstrap = ''
     mkdir "$out"
-    mkdir -p "$out/.idx/"
-    cp -rf ${./.idx/dev.nix} "$out/.idx/dev.nix"
-
     cd "$out"
     npx create-expo-app@"latest" . --template blank@sdk-52
     yarn add react-native-purchases
     npx expo install expo-dev-client
     npx expo prebuild --platform android
     cd ios && pod install || true
+    mkdir -p .idx
+    cp -rf ${./template/dev.nix} .idx/dev.nix
     chmod -R +w "$out"
   '';
 }
