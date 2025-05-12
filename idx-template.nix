@@ -2,7 +2,6 @@
   packages = [
     pkgs.nodejs_20
     pkgs.watchman
-    pkgs.yarn
     pkgs.jdk21_headless
     pkgs.gradle
   ];
@@ -11,7 +10,7 @@
     mkdir "$out"
     cd "$out"
     npx create-expo-app@"latest" . --template blank@sdk-52
-    yarn add react-native-purchases
+    npx expo install react-native-purchases
     npx expo install expo-dev-client
     npx expo prebuild --platform android
     cd ios && pod install || true

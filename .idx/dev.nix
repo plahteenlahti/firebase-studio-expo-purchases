@@ -4,7 +4,6 @@
   packages = [
     pkgs.nodejs_20
     pkgs.watchman
-    pkgs.yarn
     pkgs.cocoapods
     pkgs.jdk21_headless
     pkgs.gradle
@@ -23,7 +22,7 @@
           PROJECT_NAME="expo-app"
           npx create-expo-app@"latest" "$PROJECT_NAME" --template blank@sdk-52
           cd "$PROJECT_NAME"
-          yarn add react-native-purchases
+          npx expo install react-native-purchases
           npx expo install expo-dev-client
           npx expo prebuild --platform all
           cd ios && pod install && cd ..
@@ -33,7 +32,7 @@
         android = ''
           cd $(find . -maxdepth 1 -type d -not -name 'node_modules' -not -name '.' | head -n 1)
           adb -s emulator-5554 wait-for-device
-          yarn android
+          npx expo run:android
         '';
       };
     };
@@ -42,7 +41,7 @@
       enable = true;
       previews = {
         web = {
-          command = [ "yarn" "web" "--" "--port" "$PORT" ];
+          command = [ "npx" "expo" "start" "--" "--port" "$PORT" ];
           manager = "web";
         };
         android = {
