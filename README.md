@@ -2,8 +2,8 @@
 
 A React Native Expo template with RevenueCat purchases. Quickly bootstrap a mobile app with Expo, RevenueCat, and all necessary dependencies preconfigured.
 
-<a href="https://studio.firebase.google.com/import?url=https%3A%2F%2Fgithub.com%2Fplahteenlahti%2Ffirebase-studio-expo-purchases">
-  <img
+<a href=https://idx.google.com/new?template=https://github.com/plahteenlahti/firebase-studio-expo-purchases">
+<img
     height="32"
     alt="Open in Firebase Studio"
     src="https://cdn.firebasestudio.dev/btn/open_light_32.svg">
