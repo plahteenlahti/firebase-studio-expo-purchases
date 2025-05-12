@@ -10,7 +10,7 @@
   bootstrap = ''
     mkdir "$out"
     mkdir -p "$out/.idx/"
-    cp -rf ${./template/dev.nix} "$out/.idx/dev.nix"
+    cp -rf ${./.idx/dev.nix} "$out/.idx/dev.nix"
 
     cd "$out"
     npx create-expo-app@"latest" . --template blank@sdk-52
