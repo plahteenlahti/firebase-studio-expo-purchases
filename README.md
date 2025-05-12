@@ -2,7 +2,7 @@
 
 A React Native Expo template with RevenueCat purchases. Quickly bootstrap a mobile app with Expo, RevenueCat, and all necessary dependencies preconfigured.
 
-<a href="https://idx.google.com/new?template=https://github.com/revenuecat/firebase-studio-expo-purchases">
+<a href="https://idx.google.com/new?template=https://github.com/plahteenlahti/firebase-studio-expo-purchases">
   <img height="32" alt="Try in IDX" src="https://cdn.idx.dev/btn/try_dark_32.svg">
 </a>
 
