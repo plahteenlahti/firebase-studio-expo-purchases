@@ -3,7 +3,6 @@
     pkgs.nodejs_20
     pkgs.watchman
     pkgs.yarn
-    pkgs.cocoapods
     pkgs.jdk21_headless
     pkgs.gradle
   ];
