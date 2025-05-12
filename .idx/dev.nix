@@ -4,7 +4,6 @@
   packages = [
     pkgs.nodejs_20
     pkgs.watchman
-    pkgs.cocoapods
     pkgs.jdk21_headless
     pkgs.gradle
   ];
