@@ -20,8 +20,7 @@
     workspace = {
       onCreate = {
         setup = ''
-          echo "Enter project name:"
-          read PROJECT_NAME
+          PROJECT_NAME="expo-app"
           npx create-expo-app@"latest" "$PROJECT_NAME" --template blank@sdk-52
           cd "$PROJECT_NAME"
           yarn add react-native-purchases
@@ -35,11 +34,6 @@
           cd $(find . -maxdepth 1 -type d -not -name 'node_modules' -not -name '.' | head -n 1)
           adb -s emulator-5554 wait-for-device
           yarn android
-        '';
-        ios = ''
-          cd $(find . -maxdepth 1 -type d -not -name 'node_modules' -not -name '.' | head -n 1)
-          xcrun simctl boot "iPhone 14" || true
-          yarn ios
         '';
       };
     };
