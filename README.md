@@ -8,6 +8,7 @@ A React Native Expo template with RevenueCat purchases. Quickly bootstrap a mobi
     alt="Open in Firebase Studio"
     src="https://cdn.firebasestudio.dev/btn/open_light_32.svg">
 </a>
+
 ## Features
 
 - React Native Expo app (SDK 52)
