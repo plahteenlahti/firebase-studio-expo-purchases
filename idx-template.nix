@@ -16,7 +16,7 @@
     npx expo prebuild --platform android
     cd ios && pod install || true
     mkdir -p .idx
-    cp -rf ${./template/dev.nix} .idx/dev.nix
+    cp -rf ${./.idx/dev.nix} .idx/dev.nix
     chmod -R +w "$out"
   '';
 }
