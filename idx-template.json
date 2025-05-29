@@ -1,5 +1,5 @@
 {
-  "name": "Expo + RevenueCat Starter",
+  "name": "RevenueCat + Expo Starter",
   "description": "A React Native Expo template with RevenueCat purchases",
   "categories": ["Mobile"],
   "tags": ["react-native", "expo", "revenuecat", "mobile", "template"],
