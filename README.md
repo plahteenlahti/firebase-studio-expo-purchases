@@ -1,4 +1,4 @@
-# Expo + RevenueCat Starter
+# RevenueCat + Expo Starter
 
 A React Native Expo template with RevenueCat purchases. Quickly bootstrap a mobile app with Expo, RevenueCat, and all necessary dependencies preconfigured.
 
